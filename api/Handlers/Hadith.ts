@@ -74,7 +74,7 @@ class HadithHandler extends Handler {
         })
 
         const requestedRange = (to - from) + 1
-        if (requestedRange > 300) this.setHttpError({
+        if (requestedRange > 10000) this.setHttpError({
           code: 400,
           message: `Reached max number of hadiths requested. Max: 300, but you request ${requestedRange}.`
         })
