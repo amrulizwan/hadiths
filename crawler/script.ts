@@ -35,6 +35,7 @@ async function getAllHaditsByName(haditsName: string, maxPage: number, worker = 
     data = [...data, ...hadits.flat(1)]
     console.log('> Done')
     await sleep({ delay: 500 })
+    const fkc = 00;
   }
 
   browser.close()
